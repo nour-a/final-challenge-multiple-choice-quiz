@@ -1,0 +1,80 @@
+body{
+	
+	background-image: url('http://millerautomotive.jnhinc.com/wp-content/uploads/sites/35/2015/08/portal-background-gradient.jpg');
+	background-color: #e6f2ff;
+}   
+
+p {
+	border: 2px dotted #663300;
+	font-size: 19px;
+	width:700px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	background: linear-gradient(#ffe6cc, #fff);
+	font-family: 'Copperplate Gothic Light';
+	position: relative;
+
+}
+
+h1 {
+	font-family: 'Copperplate Gothic Light', 'Verdana', sans-serif;
+	letter-spacing: 2px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 20px;
+	font-size: 56px;
+	text-align: center;
+	color: #990000;
+}
+li{
+	font-size: 15px;
+
+}
+
+.button {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #cc6900;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 280px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 500px;
+  font-family: 'Copperplate Gothic Light';
+  position: relative;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Choices Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster|Muli' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Multiple Questions Quiz</h1>
+<ol>
+	<li>
+		<p class="first">What is the highest point on the Earth's continental crust?</p>
+		<form>
+		<input type="radio" name="first" value="bg" class="correct1">Mount Everest
+</br>
+		<input type="radio" name="first" value="bg" class="incorrect1">Lhotse</br>
+		<input type="radio" name="first" value="bg" class="incorrect1">Annapurna</br>
+	    </form>
+	</li>
+
+	<li>
+		<p class="second">Which two colours make purple?
+?</p>
+		<form>
+		<input type="radio" name="first" value="bg" class="incorrect2">Red and Green
+</br>
+		<input type="radio" name="first" value="bg" class="correct2">Red and Blue
+</br>
+		<input type="radio" name="first" value="bg" class="incorrect2">Blue and Yellow
+</br>
+	    </form>
+	</li>
+	<li>
+		<p class="third">Which Italian city has a famous leaning tower?
+</p>
+		<form>
+		<input type="radio" name="first" value="bg" class="incorrect3">Florence</br>
+		<input type="radio" name="first" value="bg" class="correct3">Pisa</br>
+		<input type="radio" name="first" value="bg" class="incorrect3">Rome</br>
+	    </form>
+	</li>
+	<li>
+		<p class="forth">Which is the only Portuguese speaking country in the Americas?</p>
+		<form>
+		<input type="radio" name="first" value="bg" class="incorrect4">Peru</br>
+		<input type="radio" name="first" value="bg" class="incorrect4">Colombia</br>
+		<input type="radio" name="first" value="bg" class="correct4">Brazil</br>
+	    </form>
+	</li>
+	<li>
+		<p class="fifth">How many of the lakes in the Lake District are called by t</p>
+		<form>
+		<input type="radio" name="first" value="bg" class="correct5">1</br>
+		<input type="radio" name="first" value="bg" class="incorrect5">3</br>
+		<input type="radio" name="first" value="bg" class="incorrect5">5</br>
+	    </form>
+	</li>
+</ol>
+<button class="button" style="vertical-align:middle" onclick="playAgain()"><span>Reload The Test again </span></button>
+
+
+<script>
+var scoure = 0;
+	$(document).ready(function(){        
+
+    $('.correct1').click(function(){
+    	$('.first').css("background", "linear-gradient(#009900,#fff");
+    	scoure++;
+    });
+    $('.correct2').click(function(){
+    	$('.second').css("background", "linear-gradient(#009900,#fff");
+    	scoure++;
+    });
+    $('.correct3').click(function(){
+    	$('.third').css("background", "linear-gradient(#009900,#fff");
+    	scoure++;
+    });
+    $('.correct4').click(function(){
+    	$('.forth').css("background", "linear-gradient(#009900,#fff");
+    	scoure++;
+    });
+    $('.correct5').click(function(){
+    	$('.fifth').css("background", "linear-gradient(#009900,#fff");
+    	scoure++;
+    });
+    $('.incorrect1').click(function(){
+    	$('.first').css("background", "linear-gradient(#ffe6cc,#fff");
+    });
+    $('.incorrect2').click(function(){
+    	$('.second').css("background", "linear-gradient(#ffe6cc,#fff");
+    });
+    $('.incorrect3').click(function(){
+    	$('.third').css("background", "linear-gradient(#ffe6cc,#fff");
+    });
+    $('.incorrect4').click(function(){
+    	$('.forth').css("background", "linear-gradient(#ffe6cc,#fff");
+    }); 
+    $('.incorrect5').click(function(){
+    	$('.fifth').css("background", "linear-gradient(#ffe6cc,#fff");
+    });                 
+    });
+    function playAgain(){
+
+				location.reload(true);
+		}
+
+</script>
+</body>
+</html>
